@@ -1,4 +1,4 @@
 #!/bin/sh
-#ExtraMenu=JOHNYD Restart urządzenia :ExtraMenu/reboot_box.sh
+#ExtraMenu=JOHNYD Restart tunera :ExtraMenu/reboot_box.sh
 
 reboot
