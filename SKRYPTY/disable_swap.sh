@@ -1,4 +1,4 @@
 #!/bin/sh
-#ExtraMenu=JOHNYD Wyłącz SWAP :ExtraMenu/disable_swap.sh
+#ExtraMenu=JOHNYD Wyłącz swap :ExtraMenu/disable_swap.sh
 
-swapoff /media/hdd/swapfile && echo "SWAP wyłączony." || echo "Błąd wyłączania SWAP."
+swapoff /media/hdd/swapfile && rm /media/hdd/swapfile

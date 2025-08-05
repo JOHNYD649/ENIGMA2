@@ -1,4 +1,4 @@
 #!/bin/sh
-#ExtraMenu=JOHNYD Włącz SWAP :ExtraMenu/enable_swap.sh
+#ExtraMenu=JOHNYD Włącz swap :ExtraMenu/enable_swap.sh
 
-swapon /media/hdd/swapfile && echo "SWAP włączony." || echo "Błąd włączania SWAP."
+fallocate -l 256M /media/hdd/swapfile && chmod 600 /media/hdd/swapfile && mkswap /media/hdd/swapfile && swapon /media/hdd/swapfile
