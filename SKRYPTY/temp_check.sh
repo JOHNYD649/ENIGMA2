@@ -1,5 +1,4 @@
 #!/bin/sh
-#ExtraMenu=JOHNYD Sprawdź temperaturę tunera :ExtraMenu/temp_check.sh
+#ExtraMenu=JOHNYD Sprawdź temperaturę systemu :ExtraMenu/temp_check.sh
 
-echo "Temperatura tunera:"
-cat /proc/stb/fp/temp_sensor_avs
+cat /sys/class/thermal/thermal_zone0/temp | awk '{print $1/1000 "°C"}'

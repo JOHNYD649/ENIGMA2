@@ -1,4 +1,4 @@
 #!/bin/sh
-#ExtraMenu=JOHNYD Sprawdź użycie dysku :ExtraMenu/disk_usage.sh
+#ExtraMenu=JOHNYD Użycie dysku :ExtraMenu/disk_usage.sh
 
-df -h /media/hdd
+df -h
