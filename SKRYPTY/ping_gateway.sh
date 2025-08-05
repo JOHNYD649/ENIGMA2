@@ -1,4 +1,4 @@
 #!/bin/sh
-#ExtraMenu=JOHNYD Ping bramy :ExtraMenu/ping_gateway.sh
+#ExtraMenu=JOHNYD Ping do bramy :ExtraMenu/ping_gateway.sh
 
-ip route | grep default | awk '{print $3}' | xargs ping -c 4
+ping -c 4 192.168.1.1
